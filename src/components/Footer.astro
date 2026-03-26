@@ -1,21 +1,27 @@
-<footer class="relative w-screen h-[400px]">
+---
+import X from "../assets/svg/x.svg";
+import Instagram from "../assets/svg/instagram.svg";
+import Github from "../assets/svg/github.svg";
+---
+
+<footer class="relative w-screen h-[400px] pb-32">
     <div
         class="absolute inset-0 bg-[url('/images/footer.webp')] bg-cover bg-bottom
         [mask-image:linear-gradient(transparent,black_50%)]"
     >
     </div>
-    
+
     <div
-        class="relative h-full flex flex-col justify-center items-center text-white"
+        class="relative h-full flex flex-col justify-center items-center text-[#2a1f26]"
     >
         <div class="footer-content">
-            <p>© 2026 LaraCorps. All rights reserved.</p>
+            <p>© 2026 La Velada del Año. Todos los derechos reservados. </p>
         </div>
-    
-        <div class="social-links">
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
+
+        <div class="flex flex-row gap-x-2 items-center justify-center mt-4">
+            <a class="size-10 hover:scale-125 transition" href="https://twitter.com" target="_blank"><X /></a>
+            <a class="size-10 hover:scale-125 transition" href="https://instagram.com" target="_blank"><Instagram /></a>
+            <a class="size-10 hover:scale-125 transition" href="https://github.com" target="_blank"><Github /></a>
         </div>
     </div>
 </footer>
